@@ -11,5 +11,7 @@ TASK2
 
 TASK3
 git reset --soft: updates the current branch commit pointer to the specified commit.
+
 git reset --hard: updates the current branch commit pointer to the specified commit, unstages any changes, and also deletes any changes from the working directory.
+
 Git reflog is a reference log file that stores a chronological list of all changes made to the HEAD pointer in your Git repository.
