@@ -10,6 +10,7 @@ TASK2
 <img width="844" alt="s3t2p2" src="https://github.com/user-attachments/assets/2425c1c0-15ec-42f1-9b40-c75b3349a8ae">
 
 TASK3
+
 git reset --soft: updates the current branch commit pointer to the specified commit.
 
 git reset --hard: updates the current branch commit pointer to the specified commit, unstages any changes, and also deletes any changes from the working directory.
