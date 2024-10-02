@@ -26,6 +26,7 @@ jobs:
       - name: Display Runner Information
         run: |
           echo "Runner Name: ${{ runner.name }}"
+          echo "Runner OS: ${{ runner.os }}"
           echo "Runner Architecture: ${{ runner.arch }}" 
       - name: List files in the repository
         run: |
