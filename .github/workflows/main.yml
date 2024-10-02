@@ -26,10 +26,7 @@ jobs:
       - name: Display Runner Information
         run: |
           echo "Runner Name: ${{ runner.name }}"
-          echo "Runner Architecture: ${{ runner.arch }}"
-          echo "Runner Labels: ${{ runner.labels }}"
-          echo "Runner Work Directory: ${{ runner.workdir }}"
-          echo "Runner Temp Directory: ${{ runner.tempdir }}"    
+          echo "Runner Architecture: ${{ runner.arch }}" 
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
