@@ -22,18 +22,14 @@ jobs:
           lscpu
           echo "-----"
           echo "Environment variables:"
-          env
-      - name: Gather Runner Information
-        uses: actions/runner-info@v1
-        id: runner_info    
+          env  
       - name: Display Runner Information
         run: |
-          echo "Runner Name: ${{ runner_info.outputs.name }}"
-          echo "Runner Operating System: ${{ runner_info.outputs.os }}"
-          echo "Runner Architecture: ${{ runner_info.outputs.arch }}"
-          echo "Runner Labels: ${{ runner_info.outputs.labels }}"
-          echo "Runner Work Directory: ${{ runner_info.outputs.workdir }}"
-          echo "Runner Temp Directory: ${{ runner_info.outputs.tempdir }}"    
+          echo "Runner Name: ${{ runner.name }}"
+          echo "Runner Architecture: ${{ runner.arch }}"
+          echo "Runner Labels: ${{ runner.labels }}"
+          echo "Runner Work Directory: ${{ runner.workdir }}"
+          echo "Runner Temp Directory: ${{ runner.tempdir }}"    
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
